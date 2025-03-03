@@ -9,6 +9,7 @@
     <p id="memo"></p> 
     <p id="joining"></p> 
     <p id="pop"></p>
+    <p id="call-stack"></p>
       <script>
          var names=["Daniel","David","Ella","jerry","james"];
          document.getElementById("memo").
@@ -16,7 +17,10 @@
                  document.getElementById("joining").innerHTML=names.join("*");
                  names.pop();
                  document.getElementById("pop").innerHTML=names;
-
+                function add(a,b){return a+b};
+                function average(a,b){return add(a,b)/2;}
+                let result=average(5,8);
+                document.getElementById("call-stack").innerHTML=result; 
                    </script>  
   </body>
 </html>
