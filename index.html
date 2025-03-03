@@ -6,10 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <p id="memo"></p>  
+    <p id="memo"></p> 
+    <p id="joining"></p> 
+    <p id="pop"></p>
       <script>
          var names=["Daniel","David","Ella","jerry","james"];
-         document.getElementById("memo").innerHTML=names[3]+" "+names[2]+" "+names[0];
+         document.getElementById("memo").
+                  innerHTML=names[3]+" "+names[2]+" "+names[0];
+                 document.getElementById("joining").innerHTML=names.join("*");
+                 names.pop();
+                 document.getElementById("pop").innerHTML=names;
+
                    </script>  
   </body>
 </html>
